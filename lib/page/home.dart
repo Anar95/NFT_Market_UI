@@ -36,6 +36,7 @@ class _HomePageState extends State<HomePage> {
 
   ///____________________ swip card ___________
   late MatchEngine _matchEngine;
+  // ignore: non_constant_identifier_names
   late List<SwipeItem> _SwipeItems;
   late bool _isNoItem = false;
 
@@ -214,7 +215,7 @@ class _HomePageState extends State<HomePage> {
                   child: Center(
                     child: Container(
                       child: _isNoItem
-                          ? Container(
+                          ? SizedBox(
                               height: 330.h,
                               width: 300.w,
                               child: const Center(
@@ -227,7 +228,7 @@ class _HomePageState extends State<HomePage> {
                           : Stack(
                               alignment: Alignment.bottomCenter,
                               children: [
-                                Container(
+                                SizedBox(
                                   height: 330.h,
                                   width: 300.w,
                                   child: SwipeCards(
@@ -237,7 +238,7 @@ class _HomePageState extends State<HomePage> {
                                         onTap: () {},
                                         child: Stack(
                                           children: [
-                                            Container(
+                                            SizedBox(
                                               height: 440.h,
                                               width: 500.w,
                                               child: ClipRRect(
@@ -387,7 +388,6 @@ class _HomePageState extends State<HomePage> {
                                     },
                                     matchEngine: _matchEngine,
                                     onStackFinished: () {
-                                      print('onStackFinished');
                                       setState(() {
                                         reset();
                                         // _isNoItem = true;
@@ -444,7 +444,7 @@ Future<bool> showExitPopup(context) async {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          content: Container(
+          content: SizedBox(
             height: 90,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -459,26 +459,24 @@ Future<bool> showExitPopup(context) async {
                     Expanded(
                       child: ElevatedButton(
                         onPressed: () {
-                          print('yes selected');
                           exit(0);
                         },
-                        child: const Text("Yes"),
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.pinkAccent),
+                        child: const Text("Yes"),
                       ),
                     ),
                     const SizedBox(width: 15),
                     Expanded(
                         child: ElevatedButton(
                       onPressed: () {
-                        print('no selected');
                         Navigator.of(context).pop();
                       },
-                      child: const Text("No",
-                          style: TextStyle(color: Colors.black)),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
                       ),
+                      child: const Text("No",
+                          style: TextStyle(color: Colors.black)),
                     ))
                   ],
                 )

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: camel_case_types
 class bottomPage extends StatefulWidget {
   const bottomPage({Key? key}) : super(key: key);
 
@@ -10,6 +11,7 @@ class bottomPage extends StatefulWidget {
   State<bottomPage> createState() => _bottomPageState();
 }
 
+// ignore: camel_case_types
 class _bottomPageState extends State<bottomPage> {
   var currentIndex = 0;
   @override
@@ -52,14 +54,14 @@ class _bottomPageState extends State<bottomPage> {
                   child: Stack(
                     children: [
                       AnimatedContainer(
-                        duration: Duration(seconds: 1),
+                        duration: const Duration(seconds: 1),
                         curve: Curves.fastLinearToSlowEaseIn,
                         width: index == currentIndex
                             ? displayWidth * .32
                             : displayWidth * .20,
                         alignment: Alignment.center,
                         child: AnimatedContainer(
-                          duration: Duration(seconds: 1),
+                          duration: const Duration(seconds: 1),
                           curve: Curves.fastLinearToSlowEaseIn,
                           height:
                               index == currentIndex ? displayWidth * .18 : 0,
@@ -73,7 +75,7 @@ class _bottomPageState extends State<bottomPage> {
                         ),
                       ),
                       AnimatedContainer(
-                        duration: Duration(seconds: 1),
+                        duration: const Duration(seconds: 1),
                         curve: Curves.fastLinearToSlowEaseIn,
                         width: index == currentIndex
                             ? displayWidth * .31
@@ -84,7 +86,7 @@ class _bottomPageState extends State<bottomPage> {
                             Row(
                               children: [
                                 AnimatedContainer(
-                                  duration: Duration(seconds: 1),
+                                  duration: const Duration(seconds: 1),
                                   curve: Curves.fastLinearToSlowEaseIn,
                                   width: index == currentIndex
                                       ? displayWidth * .13
@@ -92,7 +94,7 @@ class _bottomPageState extends State<bottomPage> {
                                 ),
                                 AnimatedOpacity(
                                   opacity: index == currentIndex ? 1 : 0,
-                                  duration: Duration(seconds: 1),
+                                  duration: const Duration(seconds: 1),
                                   curve: Curves.fastLinearToSlowEaseIn,
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(
@@ -100,9 +102,10 @@ class _bottomPageState extends State<bottomPage> {
                                     ),
                                     child: Text(
                                       index == currentIndex
+                                          // ignore: unnecessary_string_interpolations
                                           ? '${listOfStrings[index]}'
                                           : '',
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         color: Colors.pinkAccent,
                                         fontWeight: FontWeight.w600,
                                         fontSize: 14,
@@ -115,7 +118,7 @@ class _bottomPageState extends State<bottomPage> {
                             Row(
                               children: [
                                 AnimatedContainer(
-                                  duration: Duration(seconds: 1),
+                                  duration: const Duration(seconds: 1),
                                   curve: Curves.fastLinearToSlowEaseIn,
                                   width: index == currentIndex
                                       ? displayWidth * .03

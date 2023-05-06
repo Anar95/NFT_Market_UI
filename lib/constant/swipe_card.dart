@@ -5,6 +5,7 @@ import '../string/text_string.dart';
 class Content {
   final String url;
   final String title;
+  // ignore: non_constant_identifier_names
   final String Sub_title;
 
   Content(
@@ -33,6 +34,7 @@ List<Content> contents = [
   Content(imag_4, Dog10, ETH1_50),
 ];
 
+// ignore: camel_case_types
 class title {
   final String titles;
   title(

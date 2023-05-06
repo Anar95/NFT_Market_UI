@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 45),
                 child: PhloxAnimations(
-                  duration: Duration(seconds: 1),
+                  duration: const Duration(seconds: 1),
                   // fromX: 50,
                   fromY: -90,
                   child: Row(
@@ -64,15 +64,13 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
               SizedBox(height: 60.h),
               PhloxAnimations(
-                duration: Duration(seconds: 2),
+                duration: const Duration(seconds: 2),
                 fromX: 200,
                 // fromY: 100,
-                child: Container(
-                  child: Image.asset(
-                    wave1,
-                    fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width,
-                  ),
+                child: Image.asset(
+                  wave1,
+                  fit: BoxFit.cover,
+                  width: MediaQuery.of(context).size.width,
                 ),
               ),
             ],
@@ -80,7 +78,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Align(
             alignment: Alignment.bottomCenter,
             child: PhloxAnimations(
-              duration: Duration(seconds: 2),
+              duration: const Duration(seconds: 2),
               fromY: 100,
               child: Container(
                 height: 250.h,
@@ -135,7 +133,7 @@ class _SplashScreenState extends State<SplashScreen> {
                             activeColor: Colors.pinkAccent,
                             isFinished: isFinished,
                             onWaitingProcess: () {
-                              Future.delayed(Duration(seconds: 0), () {
+                              Future.delayed(const Duration(seconds: 0), () {
                                 setState(() {
                                   isFinished = true;
                                 });
@@ -146,7 +144,7 @@ class _SplashScreenState extends State<SplashScreen> {
                                   context,
                                   PageTransition(
                                       type: PageTransitionType.fade,
-                                      child: HomePage()));
+                                      child: const HomePage()));
 
                               setState(() {
                                 isFinished = false;

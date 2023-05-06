@@ -40,7 +40,7 @@ class _MakeBidPageState extends State<MakeBidPage> {
       body: Stack(
         children: [
           PhloxAnimations(
-            duration: Duration(seconds: 1),
+            duration: const Duration(seconds: 1),
             fromY: -40,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -148,7 +148,7 @@ class _MakeBidPageState extends State<MakeBidPage> {
             left: -60,
             bottom: 160,
             child: PhloxAnimations(
-              duration: Duration(seconds: 1),
+              duration: const Duration(seconds: 1),
               fromX: -40,
               // fromOpacity: 0.2,
               child: GestureDetector(
@@ -177,7 +177,7 @@ class _MakeBidPageState extends State<MakeBidPage> {
             right: -60,
             bottom: 160,
             child: PhloxAnimations(
-              duration: Duration(seconds: 1),
+              duration: const Duration(seconds: 1),
               fromX: 40,
               child: GestureDetector(
                 onTap: add1,
@@ -204,7 +204,7 @@ class _MakeBidPageState extends State<MakeBidPage> {
 
           ///____________________ Swipe button ___________________
           PhloxAnimations(
-            duration: Duration(seconds: 1),
+            duration: const Duration(seconds: 1),
             fromY: 50,
             fromOpacity: 0.2,
             child: Padding(
@@ -230,7 +230,7 @@ class _MakeBidPageState extends State<MakeBidPage> {
                       activeColor: Colors.deepPurple,
                       isFinished: isFinished,
                       onWaitingProcess: () {
-                        Future.delayed(Duration(seconds: 0), () {
+                        Future.delayed(const Duration(seconds: 0), () {
                           setState(() {
                             isFinished = true;
                           });

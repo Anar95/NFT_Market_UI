@@ -30,7 +30,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 PhloxAnimations(
-                  duration: Duration(seconds: 1),
+                  duration: const Duration(seconds: 1),
                   fromDegrees: -20,
                   fromX: -100,
                   child: Container(
@@ -73,7 +73,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
                 ///_________ middal part code __________________
                 PhloxAnimations(
-                  duration: Duration(seconds: 1),
+                  duration: const Duration(seconds: 1),
                   fromY: -40,
                   fromOpacity: 0.2,
                   child: Padding(
@@ -93,7 +93,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           height: 120.h,
                           width: MediaQuery.of(context).size.width,
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                               // color: Colors.red.shade100,
                               borderRadius: BorderRadius.circular(25.r)),
@@ -102,7 +102,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     backgroundImage: AssetImage(profile_1),
                                     radius: 20,
                                   ),
@@ -114,7 +114,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       fontSize: 20.sp,
                                     ),
                                   ),
-                                  Spacer(),
+                                  const Spacer(),
                                   Container(
                                     height: 30.h,
                                     width: 80.w,
@@ -151,7 +151,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           height: 70.h,
                           width: MediaQuery.of(context).size.width,
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50.r),
                               color: Colors.black12.withOpacity(0.1)),
@@ -230,7 +230,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
           ///____________________ Swipe button ___________________
           PhloxAnimations(
-            duration: Duration(seconds: 1),
+            duration: const Duration(seconds: 1),
             fromY: 80,
             fromOpacity: 0.2,
             child: Padding(
@@ -256,7 +256,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       activeColor: Colors.pinkAccent,
                       isFinished: isFinished,
                       onWaitingProcess: () {
-                        Future.delayed(Duration(seconds: 0), () {
+                        Future.delayed(const Duration(seconds: 0), () {
                           setState(() {
                             isFinished = true;
                           });
