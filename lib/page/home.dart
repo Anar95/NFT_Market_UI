@@ -6,13 +6,12 @@ import 'package:glassmorphism/glassmorphism.dart';
 import 'package:phlox_animations/phlox_animations.dart';
 import 'package:swipe_cards/swipe_cards.dart';
 
-
+import '../constant/swipe_card.dart';
 import '../string/image_string.dart';
 import '../string/text_string.dart';
 import 'bottomnav_bar.dart';
 
 import 'dashboard.dart';
-
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -475,7 +474,8 @@ Future<bool> showExitPopup(context) async {
                         print('no selected');
                         Navigator.of(context).pop();
                       },
-                      child: const Text("No", style: TextStyle(color: Colors.black)),
+                      child: const Text("No",
+                          style: TextStyle(color: Colors.black)),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
                       ),
@@ -488,63 +488,3 @@ Future<bool> showExitPopup(context) async {
         );
       });
 }
-
-
-
-
-class Content {
-  final String url;
-  final String title;
-  final String Sub_title;
-
-  Content(
-    this.url,
-    this.title,
-    this.Sub_title,
-  );
-}
-
-List<Content> contents = [
-  Content(imag_1, Monkey_Blup, ETH1_20),
-  Content(imag_2, Dog, ETH1_30),
-  Content(imag_3, Monkey10_Blup, ETH1_40),
-  Content(imag_4, Dog10, ETH1_50),
-  Content(imag_1, Monkey_Blup, ETH1_20),
-  Content(imag_2, Dog, ETH1_30),
-  Content(imag_3, Monkey10_Blup, ETH1_40),
-  Content(imag_4, Dog10, ETH1_50),
-  Content(imag_1, Monkey_Blup, ETH1_20),
-  Content(imag_2, Dog, ETH1_30),
-  Content(imag_3, Monkey10_Blup, ETH1_40),
-  Content(imag_4, Dog10, ETH1_50),
-  Content(imag_1, Monkey_Blup, ETH1_20),
-  Content(imag_2, Dog, ETH1_30),
-  Content(imag_3, Monkey10_Blup, ETH1_40),
-  Content(imag_4, Dog10, ETH1_50),
-];
-
-class title {
-  final String titles;
-  title(
-    this.titles,
-  );
-}
-
-List<title> abc = [
-  title(Monkey_Blup),
-  title(Dog),
-  title(Monkey10_Blup),
-  title(Dog10),
-  title(Monkey_Blup),
-  title(Dog),
-  title(Monkey10_Blup),
-  title(Dog10),
-  title(Monkey_Blup),
-  title(Dog),
-  title(Monkey10_Blup),
-  title(Dog10),
-  title(Monkey_Blup),
-  title(Dog),
-  title(Monkey10_Blup),
-  title(Dog10),
-];

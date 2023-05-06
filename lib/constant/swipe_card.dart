@@ -1,5 +1,6 @@
-import '../String File/image_string.dart';
-import '../String File/text_string.dart';
+
+import '../string/image_string.dart';
+import '../string/text_string.dart';
 
 class Content {
   final String url;
