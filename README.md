@@ -19,9 +19,6 @@
      </tr>
  </table>
  
- <table>
- 
-  <tr>
- <td valign="top"><img width="474" alt="Ekran Resmi 2023-05-07 01 02 30" src="https://user-images.githubusercontent.com/79910694/236650468-82e198a9-35a7-465e-b411-43887438447a.png">
- </tr>
- </table>
+
+
+
