@@ -1,7 +1,6 @@
 # nft_market_ui
  
-  </tr>
- </table>
+
  
  <table>
  
