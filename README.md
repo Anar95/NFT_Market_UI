@@ -1,8 +1,10 @@
 # nft_market_ui
  
  </table>
-<img width="480" alt="Ekran Resmi 2023-05-07 01 00 41" src="https://user-images.githubusercontent.com/79910694/236650457-ae0587e7-22c1-4373-9583-19a16576ce80.png">
-<img width="465" alt="Ekran Resmi 2023-05-07 01 01 44" src="https://user-images.githubusercontent.com/79910694/236650462-57c2834d-70da-4226-b6e9-64e99bf20ed2.png">
+ 
+  </tr>
+ <td valign="top"><img<img width="480" alt="Ekran Resmi 2023-05-07 01 00 41" src="https://user-images.githubusercontent.com/79910694/236650457-ae0587e7-22c1-4373-9583-19a16576ce80.png">
+ <td valign="top"><img<img width="465" alt="Ekran Resmi 2023-05-07 01 01 44" src="https://user-images.githubusercontent.com/79910694/236650462-57c2834d-70da-4226-b6e9-64e99bf20ed2.png">
   </tr>
  </table>
  
